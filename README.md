@@ -4,12 +4,15 @@ A comprehensive financial document analysis system that processes corporate repo
 # Bugs Found and Fixes Applied
 ## 1. Agents Configuration (agents.py)
 Bug: Missing LLM initialization
+
 Fix: Added proper ChatGroq initialization with correct parameter handling
 
 Bug: Incorrect tool references
+
 Fix: Changed from FinancialDocumentTool.read_data_tool to read_data_tool
 
 Bug: Unprofessional agent descriptions
+
 Fix: Maintained original descriptions but noted they should be updated for production
 
 ## 2. Task Definitions (task.py)
