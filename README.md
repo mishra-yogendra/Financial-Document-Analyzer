@@ -93,24 +93,35 @@ Save it as data/TSLA-Q2-2025-Update.pdf or upload via the API
 
 http://localhost:8000
 
-### Endpoints
-### 1. Health Check
-### URL: /
-### Method: GET
-### Response:
+Endpoints
+
+Health 
+
+ URL: /
+ 
+ Method: GET
+ 
+ Response:
 
 {
   "message": "Financial Document Analyzer API is running"
 }
 
-### Analyze Financial Document
-### URL: /analyze
-### Method: POST
-### Parameters:
-### file: PDF file (required)
-### query: Analysis query (optional, defaults to "Analyze this financial document for investment insights")
-### Request Format: multipart/form-data
-### Response:
+ Analyze Financial Document
+ 
+ URL: /analyze
+ 
+ Method: POST
+ 
+Parameters:
+
+file: PDF file (required)
+
+query: Analysis query (optional, defaults to "Analyze this financial document for investment insights")
+
+Request Format: multipart/form-data
+
+Response:
 
 {
   "status": "success",
@@ -121,6 +132,7 @@ http://localhost:8000
 
 ## Example Usage
 ### Using Python :
+
 import requests
 
 url = "http://localhost:8000/analyze"
