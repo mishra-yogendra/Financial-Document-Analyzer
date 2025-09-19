@@ -2,7 +2,7 @@
 # Project Overview
 A comprehensive financial document analysis system that processes corporate reports, financial statements, and investment documents using AI-powered analysis agents. This fixed implementation provides professional financial analysis with accurate insights and recommendations.
 # Bugs Found and Fixes Applied
-# 1. Agents Configuration (agents.py)
+## 1. Agents Configuration (agents.py)
 Bug: Missing LLM initialization
 Fix: Added proper ChatGroq initialization with correct parameter handling
 
@@ -12,7 +12,7 @@ Fix: Changed from FinancialDocumentTool.read_data_tool to read_data_tool
 Bug: Unprofessional agent descriptions
 Fix: Maintained original descriptions but noted they should be updated for production
 
-# 2. Task Definitions (task.py)
+## 2. Task Definitions (task.py)
 Bug: Missing agent imports
 Fix: Added all necessary agent imports (verifier, investment_advisor, risk_assessor)
 
@@ -22,7 +22,7 @@ Fix: Updated tool assignments to match available tools
 Bug: Unprofessional task descriptions
 Fix: Maintained original descriptions but noted they should be updated for production
 
-# 3. Tool Implementation (tools.py)
+## 3. Tool Implementation (tools.py)
 Bug: Incorrect PDF reading implementation
 Fix: Replaced with proper PyPDFLoader implementation
 
@@ -32,7 +32,7 @@ Fix: Added proper tool decorators
 Bug: Inconsistent parameter naming
 Fix: Standardized parameter names
 
-# 4. Main Application (main.py)
+## 4. Main Application (main.py)
 Bug: Missing async handling
 Fix: Added proper async/await pattern for crew execution
 
@@ -42,7 +42,7 @@ Fix: Changed to use uploaded file path
 Bug: Missing error handling for file uploads
 Fix: Added proper try-catch blocks and file validation
 
-# 5. Requirements (requirements.txt)
+## 5. Requirements (requirements.txt)
 Bug: Missing dependencies
 Fix: Added langchain-community, uvicorn, dotenv, and other necessary packages
 
@@ -53,3 +53,11 @@ Fix: Adjusted versions to be compatible
 ## Prerequisites
 Python 3.8+
 Groq API key (for Llama model)
+
+## Installation
+Clone the repository :
+Install required packages:
+
+ pip install -r requirements.txt
+
+ 
