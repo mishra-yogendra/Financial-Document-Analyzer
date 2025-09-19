@@ -50,6 +50,6 @@ Bug: Version conflicts
 Fix: Adjusted versions to be compatible
 
 # Setup Instructions
-# Prerequisites
+## Prerequisites
 Python 3.8+
 Groq API key (for Llama model)
